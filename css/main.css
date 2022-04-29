@@ -64,11 +64,23 @@ p, h2, h3, a {
   z-index: -1;
 }
 
+@media (max-width: 599px) {
+  .background-effect {
+    width: 100%;
+  }
+}
+
 .second-background-effect {
   position: absolute;
   left: 0;
   opacity: 60%;
   z-index: -1;
+}
+
+@media (max-width: 599px) {
+  .second-background-effect {
+    width: 100%;
+  }
 }
 
 .header {

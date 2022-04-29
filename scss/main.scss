@@ -98,12 +98,20 @@ p, h2, h3, a{
     right: 0;
     opacity: 60%;
     z-index:-1;
+
+    @include for-phone-only {    
+        width: 100%;
+     }
 }
 .second-background-effect{
     position: absolute;
     left: 0;
     opacity: 60%;
     z-index:-1;
+
+    @include for-phone-only {    
+        width: 100%;
+     }
 }
 
 
