@@ -1,8 +1,8 @@
-.functions{
+.functions {
     width: 100%;
     padding: 100px 0 100px 0;
 
-    .functions-wrapper{
+    .functions-wrapper {
         margin: 0 auto;
         padding: 0 20px 0 20px;
         flex-direction: column;
@@ -10,30 +10,30 @@
         width: 100%;
         max-width: 1400px;
 
-        .functions-text{
+        .functions-text {
             margin-bottom: 30px;
-            
-            p{
+
+            p {
                 letter-spacing: $sub-title-spacing;
             }
 
-            h2{
+            h2 {
                 font-size: $font-size-h2;
             }
         }
 
-    .functions-container{
-        display: flex;
-        justify-content: space-between;
+        .functions-container {
+            display: flex;
+            justify-content: space-between;
 
-        @include for-phone-only {    
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-         }
-    }
+            @include for-phone-only {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
-        .functions-block{
+        .functions-block {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -41,48 +41,58 @@
             text-align: center;
             align-items: center;
 
-            .brush-icon{
-               width: 100%;
-               max-width: 208px;
+            .brush-icon {
+                width: 100%;
+                max-width: 208px;
             }
-            .money-icon{
-               width: 100%;
-               max-width: 118px;
+            .money-icon {
+                width: 100%;
+                max-width: 118px;
             }
-            .code-icon{
-               width: 100%;
-               max-width: 221px;
+            .code-icon {
+                width: 100%;
+                max-width: 221px;
             }
 
-            .code-icon, .money-icon, .brush-icon{
+            .code-icon,
+            .money-icon,
+            .brush-icon {
                 margin-bottom: 84px;
 
-                @include for-phone-only {    
+                @include for-phone-only {
                     margin-bottom: 30px;
-                 }
+                }
             }
 
-            h3{
+            h3 {
                 font-size: $font-size-h3;
                 font-weight: 800;
                 margin-bottom: 20px;
             }
 
-            p{
+            p {
                 font-size: $font-size-p;
             }
 
-            @include for-phone-only {    
+            @include for-desktop {
+                max-width: 275px;
+            }
+
+            @include for-phone-only {
                 margin-bottom: 100px;
-             }
+            }
+        }
+
+        @include for-desktop {
+            max-width: 1000px;
         }
     }
 
-    @include for-phone-only {    
-        padding: 100px 0 0 0 ;
-     }
-
-     @include for-mobile-only {    
+    @include for-mobile-only {
         padding: 50px 0 0 0;
-     }
+    }
+
+    @include for-phone-only {
+        padding: 100px 0 0 0;
+    }
 }

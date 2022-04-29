@@ -1,8 +1,8 @@
-.about{
+.about {
     width: 100%;
     padding: 200px 0 200px 0;
 
-    .about-wrapper{
+    .about-wrapper {
         margin: 0 auto;
         padding: 0 20px 0 20px;
         display: flex;
@@ -10,33 +10,32 @@
         max-width: 1400px;
         flex-direction: column;
 
-        .about-text{
+        .about-text {
             margin-bottom: 30px;
-            
-            p{
+
+            p {
                 letter-spacing: $sub-title-spacing;
             }
 
-            h2{
+            h2 {
                 font-size: $font-size-h2;
             }
         }
 
-        .about-block{
+        .about-block {
             width: 100%;
 
-            .image-container{
+            .image-container {
                 max-width: 300px;
                 height: 400px;
                 width: 100%;
                 overflow: hidden;
-                background-position:center;
+                background-position: center;
 
-                .lynn{
+                .lynn {
                     width: 100%;
                 }
             }
-
         }
     }
 }

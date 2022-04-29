@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     background-color: white;
     position: fixed;
@@ -6,41 +6,47 @@
     z-index: 8;
     left: 0;
 
-    nav{
+    nav {
         padding: 20px 30px 20px 0px;
         width: 100%;
         max-width: calc(100% - ((100% - 1400px) / 2));
         margin-left: auto;
-    
-        ul{
+
+        ul {
             width: 100%;
             justify-content: space-between;
             display: flex;
 
-            .logo{
-                a{
+            .logo {
+                a {
                     font-size: 30px;
                     font-family: $font-family-poppins;
                 }
+
+                li{
+                    @include for-desktop {
+                        padding: 0;
+                     }
+                }
+
             }
 
-            .menu-items{
+            .menu-items {
                 display: flex;
                 align-items: center;
 
-                .items{
+                .items {
                     display: flex;
                     align-items: center;
                     margin-right: 20px;
                 }
-
             }
 
-            li{
+            li {
                 padding: 20px;
                 list-style-type: none;
 
-                a{
+                a {
                     text-decoration: none;
                     font-size: $font-size-nav;
                     font-family: $font-family-montserrat;
@@ -48,28 +54,34 @@
                     font-weight: 800;
                 }
 
-                a:hover{
+                a:hover {
                     color: $green-color-dark;
                     cursor: pointer;
                 }
-                .current{
+                .current {
                     color: $green-color-dark;
                 }
             }
 
-
-            .green-button{
+            .green-button {
                 margin-right: 10px;
             }
 
-            .green-button, .dark-button{
+            .green-button,
+            .dark-button {
                 padding: 10px;
             }
         }
 
-    
-        @include for-phone-only {    
+        @include for-desktop {
+            max-width: 1000px;
+            margin: 0 auto;  
+            padding: 20px 20px;
+        }
+
+        @include for-phone-only {
             display: none;
-         }
+        }
+
     }
 }
