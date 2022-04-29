@@ -881,4 +881,20 @@ p, h2, h3, a {
 .about .about-wrapper .about-text h2 {
   font-size: 38px;
 }
+
+.about .about-wrapper .about-block {
+  width: 100%;
+}
+
+.about .about-wrapper .about-block .image-container {
+  max-width: 300px;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+}
+
+.about .about-wrapper .about-block .image-container .lynn {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
