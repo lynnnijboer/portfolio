@@ -25,6 +25,12 @@
     .functions-container{
         display: flex;
         justify-content: space-between;
+
+        @include for-phone-only {    
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+         }
     }
 
         .functions-block{
@@ -50,6 +56,10 @@
 
             .code-icon, .money-icon, .brush-icon{
                 margin-bottom: 84px;
+
+                @include for-phone-only {    
+                    margin-bottom: 30px;
+                 }
             }
 
             h3{
@@ -61,6 +71,14 @@
             p{
                 font-size: $font-size-p;
             }
+
+            @include for-phone-only {    
+                margin-bottom: 100px;
+             }
         }
     }
+
+    @include for-phone-only {    
+        padding: 100px 0 0 0 ;
+     }
 }
