@@ -15,6 +15,7 @@
 
         @include for-phone-only {    
             flex-direction: column;
+            align-items: center;
          }
     }
 
@@ -80,10 +81,15 @@
 
         @include for-phone-only {    
             overflow: hidden;
+            align-self: center;
          }
     }
 
     @include for-phone-only {    
         padding: 100px 0 50px 0;
+     }
+
+     @include for-mobile-only {    
+        margin-top: 80px;
      }
 }
