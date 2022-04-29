@@ -21,5 +21,19 @@
                 font-size: $font-size-h2;
             }
         }
+
+        .about-block{
+            width: 100%;
+            
+            .image-container{
+                max-width: 100px;
+                width: 100%;
+
+                .lynn{
+                    width: 100%;
+                }
+            }
+
+        }
     }
 }
