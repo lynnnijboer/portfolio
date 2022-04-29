@@ -209,7 +209,7 @@ p, h2, h3, a {
   font-weight: 800;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .hero .hero-content-left h1 {
     font-size: 40px;
   }
@@ -237,7 +237,7 @@ p, h2, h3, a {
   gap: 15px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .hero .hero-content-left .button-container .green-button, .hero .hero-content-left .button-container .dark-button {
     width: 100%;
   }
@@ -404,7 +404,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .functions {
     padding: 50px 0 0 0;
   }
@@ -501,7 +501,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .pricing .pricing-wrapper .pricing-blocks .block h1, .pricing .pricing-wrapper .pricing-blocks .block-green h1 {
     font-size: 70px;
   }
@@ -568,7 +568,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .pricing .pricing-wrapper .pricing-blocks .block .popular, .pricing .pricing-wrapper .pricing-blocks .block-green .popular {
     padding: 20px;
   }
@@ -598,7 +598,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .pricing {
     padding: 0 0 50px 0;
   }
@@ -664,7 +664,7 @@ p, h2, h3, a {
   max-height: 44px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .contact-page .contact-wrapper .contact-container .left-contact-block .icon-text-block img {
     max-height: 30px;
     max-width: 30px;
@@ -678,7 +678,7 @@ p, h2, h3, a {
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .contact-page .contact-wrapper .contact-container .left-contact-block .icon-text-block h3 {
     font-size: 16px;
   }
@@ -698,7 +698,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .contact-page .contact-wrapper .contact-container .left-contact-block {
     padding: 30px;
   }
@@ -743,7 +743,7 @@ p, h2, h3, a {
   text-transform: uppercase;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .contact-page .contact-wrapper .contact-container .right-contact-block form .green-button {
     margin: 0 auto;
   }
@@ -761,7 +761,7 @@ p, h2, h3, a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 380px) {
   .contact-page .contact-wrapper .contact-container .right-contact-block {
     padding: 60px 30px;
   }

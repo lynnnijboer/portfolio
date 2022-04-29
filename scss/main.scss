@@ -24,7 +24,7 @@ $white-color:#FFFFFF;
 
 //mixins
 @mixin for-mobile-only {
-    @media (max-width: 376px) { @content; }
+    @media (max-width: 380px) { @content; }
   }
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
