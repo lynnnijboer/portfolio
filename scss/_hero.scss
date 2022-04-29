@@ -27,6 +27,10 @@
             font-family: $font-family-montserrat;
             margin-bottom: 30px;
             font-weight: 800;
+
+            @include for-mobile-only {    
+                font-size: 40px;
+             }
         }
         p{
             font-size: $font-size-p;
@@ -43,6 +47,12 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
+
+            .green-button, .dark-button{
+                @include for-mobile-only {    
+                    width: 100%;
+                 }
+            }
 
             @include for-phone-only {    
                 justify-content: center;

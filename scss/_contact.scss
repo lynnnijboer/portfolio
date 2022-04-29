@@ -42,6 +42,11 @@
                         width: 44px;
                         height: 100%;
                         max-height: 44px;
+
+                        @include for-mobile-only {    
+                            max-height: 30px;
+                            max-width: 30px;
+                         }
                     }
 
                     h3{
@@ -49,6 +54,10 @@
                         font-weight: 200;
                         margin-left: 20px;
                         cursor: pointer;
+
+                        @include for-mobile-only {    
+                            font-size: 16px;
+                         }
 
                     }
                 }
@@ -63,6 +72,10 @@
 
                 @include for-phone-only {    
                     width: 100%;
+                 }
+
+                 @include for-mobile-only {    
+                    padding: 30px;
                  }
             }
             .right-contact-block{
@@ -95,6 +108,10 @@
                         width: 100%;
                         max-width: 120px;
                         text-transform: uppercase;
+
+                        @include for-mobile-only {    
+                            margin: 0 auto;
+                         }
                     }
 
                     @include for-phone-only {    
@@ -104,6 +121,10 @@
 
                 @include for-phone-only {    
                     width: 100%;
+                 }
+
+                 @include for-mobile-only {    
+                    padding: 60px 30px;
                  }
             }
 

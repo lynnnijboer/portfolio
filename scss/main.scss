@@ -23,6 +23,9 @@ $black-color-light:#4E4E4E;
 $white-color:#FFFFFF;
 
 //mixins
+@mixin for-mobile-only {
+    @media (max-width: 376px) { @content; }
+  }
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
   }
