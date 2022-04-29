@@ -746,6 +746,7 @@ p, h2, h3, a {
 @media (max-width: 600px) {
   .contact-page .contact-wrapper .contact-container .right-contact-block form .green-button {
     margin: 0 auto;
+    border-radius: unset;
   }
 }
 
