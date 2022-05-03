@@ -193,7 +193,7 @@ a {
 }
 
 .hero {
-  padding: 200px 0 200px 0;
+  padding: 100px 0 100px 0;
   margin-top: 135px;
   width: 100%;
 }
@@ -1381,5 +1381,118 @@ a {
 
 .about .about-wrapper .about-block .image-container .lynn {
   width: 100%;
+}
+
+.mobile-header {
+  width: 100%;
+  background-color: #50b56f;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  left: 0;
+}
+
+.mobile-header nav {
+  width: 100%;
+  max-width: calc(100% - ((100% - 1400px) / 2));
+  margin-left: auto;
+}
+
+.mobile-header nav ul {
+  width: 100%;
+  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-header nav ul .logo {
+  margin-bottom: 20px;
+}
+
+.mobile-header nav ul .logo a {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .mobile-header nav ul .logo li {
+    padding: 0;
+  }
+}
+
+.mobile-header nav ul .menu-items {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-header nav ul .menu-items .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.mobile-header nav ul .menu-items .button-container {
+  padding: 20px;
+}
+
+.mobile-header nav ul li {
+  padding: 20px;
+  list-style-type: none;
+}
+
+.mobile-header nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.mobile-header nav ul li a:hover {
+  color: #50b56f;
+  cursor: pointer;
+}
+
+.mobile-header nav ul li .current {
+  color: #50b56f;
+}
+
+.mobile-header nav ul .green-button {
+  margin-right: 10px;
+}
+
+.mobile-header nav ul .green-button,
+.mobile-header nav ul .dark-button {
+  padding: 10px;
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .mobile-header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mobile-header nav {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
