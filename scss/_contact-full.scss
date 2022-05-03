@@ -60,6 +60,10 @@
                     margin-bottom: 40px;
                     cursor: pointer;
                 }
+
+                @include for-phone-only {
+                    width: 100%;
+                }
             }
             .right-contact-block {
                 background-color: $black-color-dark;
@@ -91,9 +95,38 @@
                         width: 100%;
                         max-width: 120px;
                         text-transform: uppercase;
+
+                        @include for-mobile-only {
+                            margin: 0 auto;
+                            border-radius: unset;
+                        }
+                    }
+
+                    @include for-phone-only {
+                        width: 100%;
                     }
                 }
+
+                @include for-phone-only {
+                    width: 100%;
+                }
+
+                @include for-mobile-only {
+                    padding: 60px 30px;
+                }
+            }
+
+            @include for-phone-only {
+                flex-direction: column;
             }
         }
+
+        @include for-phone-only {
+            padding: 0 20px 0 20px;
+        }
+    }
+
+    @include for-phone-only {
+        padding: 50px 0 50px 0;
     }
 }

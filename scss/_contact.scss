@@ -133,9 +133,6 @@
             }
         }
 
-        @include for-desktop {
-            max-width: 1250px;
-        }
 
         @include for-phone-only {
             padding: 0 20px 0 20px;
