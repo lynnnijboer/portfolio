@@ -664,6 +664,13 @@ a {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .pricing .pricing-wrapper .pricing-blocks .block,
+  .pricing .pricing-wrapper .pricing-blocks .block-green {
+    padding: 60px 20px 60px 20px;
+  }
+}
+
 @media (max-width: 1000px) {
   .pricing .pricing-wrapper .pricing-blocks .block,
   .pricing .pricing-wrapper .pricing-blocks .block-green {
