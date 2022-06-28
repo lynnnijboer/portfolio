@@ -19,6 +19,25 @@
             }
         }
 
+        .stage-blok {
+            margin-bottom: 50px;
+            .blok {
+                margin-bottom: 50px;
+                max-width: 70%;
+
+                h2 {
+                    margin-bottom: 10px;
+                }
+            }
+
+            @include for-phone-only {
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
         .content-block {
             background-color: rgba(0, 0, 0, 0.7);
             width: 100%;
@@ -88,6 +107,7 @@
                     }
 
                     .block-image-wrapper {
+                        flex-wrap: wrap;
                         margin-top: 50px;
                         justify-content: space-between;
                         display: flex;
@@ -143,6 +163,7 @@
 
                     .block-image-wrapper {
                         margin-top: 50px;
+                        flex-wrap: wrap;
                         justify-content: space-between;
                         display: flex;
                         flex-direction: row;

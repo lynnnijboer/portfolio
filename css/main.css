@@ -1571,6 +1571,35 @@ a {
   }
 }
 
+.stage-images .image-wrapper .stage-blok {
+  margin-bottom: 50px;
+}
+
+.stage-images .image-wrapper .stage-blok .blok {
+  margin-bottom: 50px;
+  max-width: 70%;
+}
+
+.stage-images .image-wrapper .stage-blok .blok h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .stage-images .image-wrapper .stage-blok {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .stage-images .image-wrapper .content-block {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -1665,6 +1694,8 @@ a {
 }
 
 .stage-images .image-wrapper .image-block-left .text-block .block .block-image-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1740,6 +1771,8 @@ a {
 
 .stage-images .image-wrapper .image-block-right .text-block .block .block-image-wrapper {
   margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
