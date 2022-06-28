@@ -176,10 +176,6 @@
             }
         }
 
-        @include for-desktop {
-            max-width: 1000px;
-        }
-
         @include for-phone-only {
             flex-direction: column;
         }

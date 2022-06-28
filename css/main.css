@@ -1783,12 +1783,6 @@ a {
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1800px) {
-  .stage-images .image-wrapper {
-    max-width: 1000px;
-  }
-}
-
 @media (max-width: 1000px) {
   .stage-images .image-wrapper {
     -webkit-box-orient: vertical;
