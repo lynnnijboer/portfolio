@@ -22,6 +22,10 @@
             h2 {
                 font-size: $font-size-h2;
             }
+
+            @include for-macbook {
+                width: 1180px;
+            }
         }
 
         .contact-container {
@@ -69,6 +73,9 @@
                     cursor: pointer;
                 }
 
+                @include for-macbook {
+                    width: 480px;
+                }
                 @include for-phone-only {
                     width: 100%;
                 }
@@ -119,6 +126,10 @@
                     }
                 }
 
+                @include for-macbook {
+                    width: 700px;
+                }
+
                 @include for-phone-only {
                     width: 100%;
                 }
@@ -128,11 +139,18 @@
                 }
             }
 
+            @include for-macbook {
+                justify-content: flex-end;
+            }
+
             @include for-phone-only {
                 flex-direction: column;
             }
         }
 
+        @include for-macbook {
+            align-items: flex-end;
+        }
 
         @include for-phone-only {
             padding: 0 20px 0 20px;

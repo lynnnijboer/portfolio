@@ -33,12 +33,16 @@ $white-color: #ffffff;
         @content;
     }
 }
+@mixin for-macbook {
+    @media (min-width: 1000px) and (max-width: 1400px) {
+        @content;
+    }
+}
 @mixin for-desktop {
     @media (min-width: 1000px) and (max-width: 1800px) {
         @content;
     }
 }
-
 
 * {
     box-sizing: border-box;
@@ -133,3 +137,4 @@ a {
 @import "_contact-full";
 @import "_about";
 @import "_mobile-header";
+@import "_stage";
