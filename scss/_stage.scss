@@ -42,9 +42,9 @@
 
         .stage-blok {
             margin-bottom: 50px;
+            margin-top: 50px;
             .blok {
                 margin-bottom: 50px;
-                max-width: 70%;
 
                 h2 {
                     margin-bottom: 10px;
@@ -110,18 +110,31 @@
         }
 
         .image-block-left {
-            width: 50%;
+            width: 100%;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             display: flex;
             padding-right: 20px;
 
             .text-block {
-                max-width: 600px;
                 width: 100%;
 
                 .block {
-                    margin-bottom: 50px;
+                    margin-bottom: 100px;
+                    flex-wrap: wrap;
+                    margin-top: 100px;
+                    justify-content: space-between;
+                    display: flex;
+
+                    .texts {
+                        margin-right: 30px;
+                        width: 40%;
+
+                        @include for-phone-only {
+                            margin-bottom: 40px;
+                            width: 100%;
+                        }
+                    }
 
                     h2 {
                         margin-bottom: 10px;
@@ -129,13 +142,26 @@
 
                     .block-image-wrapper {
                         flex-wrap: wrap;
-                        margin-top: 50px;
+                        width: 55%;
                         justify-content: space-between;
                         display: flex;
                         flex-direction: row;
                         img {
+                            max-width: 600px;
+                            width: 100%;
                             border: 1px solid black;
                         }
+
+                        @include for-phone-only {
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+
+                    @include for-phone-only {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }
@@ -162,35 +188,62 @@
                 padding: 0;
                 width: 100%;
                 margin-bottom: 50px;
+                align-items: center;
             }
         }
         .image-block-right {
-            width: 50%;
+            width: 100%;
             display: flex;
             padding-left: 20px;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
 
             .text-block {
-                max-width: 600px;
                 width: 100%;
 
                 .block {
-                    margin-bottom: 50px;
+                    justify-content: space-between;
+                    margin-top: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 100px;
+
+                    .texts {
+                        width: 40%;
+                        margin-right: 30px;
+
+                        @include for-phone-only {
+                            margin-bottom: 40px;
+                            width: 100%;
+                        }
+                    }
 
                     h2 {
                         margin-bottom: 10px;
                     }
 
                     .block-image-wrapper {
-                        margin-top: 50px;
+                        width: 55%;
                         flex-wrap: wrap;
                         justify-content: space-between;
                         display: flex;
                         flex-direction: row;
                         img {
                             border: 1px solid black;
+                            max-width: 600px;
+                            width: 100%;
                         }
+
+                        @include for-phone-only {
+                            justify-content: center;
+                            width: 100%;
+                        }
+                    }
+
+                    @include for-phone-only {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }
@@ -214,12 +267,14 @@
 
             @include for-phone-only {
                 width: 100%;
+                align-items: center;
                 padding: 0;
             }
         }
 
         @include for-phone-only {
             flex-direction: column;
+            padding: 0px 40px;
         }
     }
 
