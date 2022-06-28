@@ -19,6 +19,27 @@
             }
         }
 
+        .stage-scherm {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 100px;
+            background-color: $green-color-dark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(1, -0.02, 0.76, 1);
+
+            h1 {
+                color: $white-color;
+            }
+
+            &.active {
+                height: 0px;
+            }
+        }
+
         .stage-blok {
             margin-bottom: 50px;
             .blok {

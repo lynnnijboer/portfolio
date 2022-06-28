@@ -98,6 +98,7 @@
                 padding: 0;
                 width: 100%;
                 margin-bottom: 50px;
+                align-items: center;
             }
         }
         .image-block-right {
@@ -128,6 +129,7 @@
             @include for-phone-only {
                 width: 100%;
                 padding: 0;
+                align-items: center;
             }
         }
 
