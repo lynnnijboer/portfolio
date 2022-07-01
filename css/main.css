@@ -72,7 +72,7 @@ a {
   z-index: -1;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1400px) {
   .background-effect {
     width: 100%;
   }
@@ -85,7 +85,7 @@ a {
   z-index: -1;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1400px) {
   .second-background-effect {
     width: 100%;
   }
@@ -1840,6 +1840,22 @@ a {
 
 .stage-images .image-wrapper .image-block-right .text-block {
   width: 100%;
+}
+
+.stage-images .image-wrapper .image-block-right .text-block .leerdoelen .block .texts {
+  width: 100%;
+}
+
+.stage-images .image-wrapper .image-block-right .text-block .leerdoelen .block .texts h2 {
+  margin-bottom: 30px;
+}
+
+.stage-images .image-wrapper .image-block-right .text-block .leerdoelen .block .texts h3 {
+  margin-bottom: 10px;
+}
+
+.stage-images .image-wrapper .image-block-right .text-block .leerdoelen .block .texts p {
+  margin-bottom: 20px;
 }
 
 .stage-images .image-wrapper .image-block-right .text-block .block {
